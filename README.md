@@ -25,7 +25,7 @@
 ## Установка ##
 
 0. Распаковать архив
-1. В директории <code>{%project_path%}/application</code> запустить команду: <code>composer install</code> (Можно выполнить на сервере)
+1. В директории <code>{%project_path%}/application</code> запустить команду: <code>composer install</code> (Можно также выполнить на стороне сервера после "docker up")
 2. В директории <code>{%project_path%}/</code> запустить команду: <code>docker-compose build</code>
 3. Затем в этой же директории <code>docker-compose up -d</code>
 4. Теперь нужно подготовить consumer для rabbitMQ (Не смог вшить скрипт в docker-compose, потому-что Rabbit запускается после php-fpm)
