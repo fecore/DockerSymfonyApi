@@ -28,7 +28,7 @@
 1. В директории <code>{%project_path%}/application</code> запустить команду: <code>composer install</code> (Можно также выполнить на стороне сервера после "docker up")
 2. В директории <code>{%project_path%}/</code> запустить команду: <code>docker-compose up -d</code>
 4. Теперь нужно подготовить consumer для rabbitMQ (Не смог вшить скрипт в docker-compose, потому-что Rabbit запускается после php-fpm)
-5. <code>docker exec -it НАЗВАНИЕ_КОНТЕЙНЕРА_php-fpm bash</code>
+5. <code>docker exec -it НАЗВАНИЕ_КОНТЕЙНЕРА_php_fpm bash</code> (для входа на php-fpm сервер и запуска consume)
 6. <code>./bin/console messenger:consume -vv</code>
 
 Готово: 
